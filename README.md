@@ -4,7 +4,7 @@
 2. `cd` into your projects directory like `Desktop` where you want store the project.
 3. Clone this repository to your local machine using-
    `git clone git@github.com:dgupta0/fithealth-assignment.git`
-4. Change to the project directory `cd scalereal-fe-assignment`
+4. Change to the project directory `cd fithealth-assignment`
 5. Make sure you are in the projects directory.
 6. Run `npm install`
 7. Run the project `npm run dev`
