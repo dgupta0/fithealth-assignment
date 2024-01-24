@@ -145,7 +145,9 @@ const Form: React.FC<FormProps> = ({ setDoctors, setIsCitySelected }) => {
             value="Yes"
             id="Yes"
           />
-          <label htmlFor="Yes">Yes</label>
+          <label className="yes-label" htmlFor="Yes">
+            Yes
+          </label>
           <input
             type="radio"
             name="prev"
