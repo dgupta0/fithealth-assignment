@@ -43,6 +43,12 @@ const Form: React.FC<FormProps> = ({ setDoctors, setIsCitySelected }) => {
     getDataFromParams();
   }, [cityFromParams]);
 
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  }
+
   function handleChange(
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -83,7 +89,7 @@ const Form: React.FC<FormProps> = ({ setDoctors, setIsCitySelected }) => {
   }
 
   return (
-    <form>
+    <form onKeyDown={(e) => handleKeyDown(e)}>
       <div className="row row1">
         <input
           type="text"
